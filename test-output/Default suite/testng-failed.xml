@@ -5,8 +5,14 @@
     <classes>
       <class name="tests.EcomTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+          <include name="setUpExtentReport"/>
           <include name="test2"/>
+          <include name="tearDownExtentReport"/>
           <include name="test4"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- tests.EcomTest -->
     </classes>

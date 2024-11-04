@@ -14,12 +14,12 @@ public class Homepage {
 	}
 	By searchBar = By.id("twotabsearchtextbox");
 	By searchIcon =  By.id("nav-search-submit-button");
-	By selectItem = By.xpath("(//*[text()='Apple iPhone 15 Plus (256 GB) - Blue'])");
+	By selectItem = By.xpath("(//*[text()='Apple iPhone 15 Plus (256 GB) - Black'])");
 	
 	public void searchProduct() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5000));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(searchBar));
-		driver.findElement(searchBar).sendKeys("Apple iPhone 15 Plus (256 GB) - Blue");
+		driver.findElement(searchBar).sendKeys("Apple iPhone 15 Plus (256 GB) - Black");
 		driver.findElement(searchIcon).click();
 		driver.findElement(selectItem).click();
 	}

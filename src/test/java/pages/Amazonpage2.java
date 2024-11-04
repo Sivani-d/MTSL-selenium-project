@@ -39,7 +39,7 @@ public class Amazonpage2 {
           }
       }
 	  System.out.println(driver.getCurrentUrl());
-	  Thread.sleep(3000);
+	  Thread.sleep(5000);
 	  JavascriptExecutor js = (JavascriptExecutor) driver;
       js.executeScript("arguments[0].scrollIntoView(true);",driver.findElement(cartButton));
      
@@ -57,6 +57,7 @@ public class Amazonpage2 {
 	  finalPrice = Double.parseDouble(AmazonProductPrice);
 	  System.out.println("Amazon product name is:"+ AmazonProductName);
 	  System.out.println("Amazon product price is:"+ AmazonProductPrice);
+	  Thread.sleep(5000);
 	  driver.close();
 	  Thread.sleep(2000);
 	  driver.switchTo().window(mainWindowHandle);
